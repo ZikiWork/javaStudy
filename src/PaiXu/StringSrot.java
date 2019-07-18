@@ -21,14 +21,13 @@ public class StringSrot {
 			array[s.length() - i - 1] = s.charAt(i);
 		}
 		return new String(array);
-
 	}
 
 	public static void main(String[] args) {
-		StringBuffer s = buffer("asdfergsdfdsf");
+		StringBuffer s = buffer("asdfghjkl");
 		System.out.println(s);
 
-		String str = string("sadasdada");
+		String str = string("asdfghjkl");
 		System.out.println(str);
 
 	}

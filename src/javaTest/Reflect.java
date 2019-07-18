@@ -20,17 +20,17 @@ public class Reflect {
 		for (Field f : fieldArray) {
 			System.out.println(f);
 		}
-		System.out.println("************获取所有的字段(包括私有、受保护、默认的)**************");
+		System.out.println("************获取对象所有的字段(包括私有、受保护、默认的)**************");
 		fieldArray = student.getDeclaredFields();
 		for (Field f : fieldArray) {
 			System.out.println(f);
 		}
-		System.out.println("*************获取公有字段****************");
+		System.out.println("*************获取对象公有字段****************");
 		Field f = student.getField("name3");
 		System.out.println(f);
 
 		/**获取类中的私有字段，并为其赋值  start*/
-		System.out.println("**************获取私有字段*并为其赋值***************");
+		System.out.println("**************获取对象私有字段*并为其赋值***************");
 		f = student.getDeclaredField("name");
 		f.setAccessible(true);// 暴力反射，解除私有限定
 		Student stuName = new Student();
@@ -38,7 +38,7 @@ public class Reflect {
 		System.out.println(stuName.getName());
 		/**获取类中的私有字段，并为其赋值  end*/
 		
-		System.out.println("-------获取所有的公有方法---------");
+		System.out.println("-------获取对象所有的公有方法---------");
 		// 获取方法：
 		Method[] methods1 = student.getMethods();
 		for (Method method : methods1) {

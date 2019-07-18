@@ -42,7 +42,7 @@ public class QuickSort {
 	}
 
 	public static void main(String[] args) {
-		int[] a = { 25, 5, 6, 8, 9, 4, 52, 4, 5, 65 };
+		int[] a = { 25, 5, 6, 8, 9, 4, -52, 4, 5, 65 };
 		int low = 0;
 		int high = a.length - 1;
 		quickSort(a, low, high);

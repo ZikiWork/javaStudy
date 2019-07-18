@@ -14,8 +14,8 @@ public class GetContent {
 	/**
 	 * 将文件中的字符串排好序后写入新的文件中！
 	 * 
-	 * @param path1
-	 * @param path2
+	 * @param path1 文件
+	 * @param path2 新文件
 	 * @throws IOException
 	 */
 	public static void getContent(String path1, String path2) throws IOException {
@@ -28,6 +28,7 @@ public class GetContent {
 		}
 		bufferedReader.close();
 		Collections.sort(name, new Comparator<String>() {// 把集合里面的元素按规则排序！
+			//重写排序规则：
 			@Override
 			public int compare(String o1, String o2) {
 				return o1.compareTo(o2);// 升序规则。
@@ -37,7 +38,6 @@ public class GetContent {
 			bufferedWriter.write(string);
 			bufferedWriter.newLine();// 换行！
 		}
-
 		bufferedWriter.close();
 	}
 

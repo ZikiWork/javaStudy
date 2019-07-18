@@ -26,7 +26,7 @@ public class InsertSort {
 	}
 
 	public static void main(String[] args) {
-		int[] a = { 25, 5, 6, 8, 9, 4, 52, 4, 5, 65 };
+		int[] a = { 25, -5, 6, 8, 9, 4, -52, 4, 5, 65 };
 		insertSort(a);
 		for (int i : a) {
 			System.out.print(i + " ");

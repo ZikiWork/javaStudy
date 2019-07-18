@@ -1,4 +1,4 @@
-package com.stack;
+ package com.stack;
 
 /**
  * 基于数组实现顺序栈

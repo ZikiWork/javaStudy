@@ -3,8 +3,7 @@ package javaTest;
 public class digui {
 
 	public static void test(int times) {
-		float H = 100;
-		float L = 0;
+		float H = 100, L = 0;
 		for (int i = 1; i <= times; i++) {
 			if (i == 1) {
 				L = H;
@@ -19,7 +18,7 @@ public class digui {
 	}
 
 	public static void main(String[] args) {
-		test(4);
+		test(5);
 	}
 
-}
+}   

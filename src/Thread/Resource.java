@@ -2,7 +2,7 @@ package Thread;
 
 public class Resource {
 	private int num = 0;
-
+	
 	public synchronized void increase() {
 		while (num != 0) {
 			try {
